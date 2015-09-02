@@ -1,0 +1,14 @@
+
+    <tr>
+    <% @users.each do |result| %>      
+      <td>User ID:<%= result.id %></td><br/>
+      <td>First Name:<%= result.first_name %></td><br/>
+      <td>Last Name:<%= result.last_name %></td><br/>
+      <td>Email:<%= result.email %></td><br/>
+    </tr>
+
+    <br/>
+    <br/>
+
+    <% end %>
+

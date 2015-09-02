@@ -1,0 +1,32 @@
+<script type="text/javascript">
+function f(o){
+  o.value=o.value.replace(/(-)/g,"");
+}
+</script>
+
+<%= form_for User.new do |f| %>
+First name
+  <%= f.text_field :first_name, :required => true %>
+<br/>
+<br/>
+Last name
+  <%= f.text_field :last_name, :required => true %>
+<br/>
+<br/>
+Email
+  <%= f.text_field :email, :required => true %>
+<br/>
+<br/>
+Social Security Number
+
+  <input type="text"
+         onmouseout="f(this)"
+         onkeyup="f(this)"
+         onblur="f(this)"
+         onclick="f(this)"          
+  <%= f.text_field :social_security_number, :size=>9, :required => true %>
+  </>
+<br/>
+<br/>
+<%= f.submit "Register", class: 'btn btn-primary' %>
+<% end %>
