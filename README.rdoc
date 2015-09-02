@@ -1,28 +1,13 @@
-== README
+Hey Matt, 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here is my solution to the interview problem. After forking the original file, I discovered I had to create an entirely new rails app because of some RVM issues with my MacBook (hence why I also created a new repository). I believe I addressed all of the requirements of the test, but please take a look and let me know if I missed anything or misunderstood any instructions. I also came up with an answer to the second bonus question about the SSN format. 
 
-Things you may want to cover:
+I didn't add a feature to cause an error message to appear if someone tries creating a user with an invalid email or SSN - instead, simply no record is created. I could certainly add that feature tomorrow if you'd like. 
 
-* Ruby version
+Also another note, once a new user is successfully created the app redirects to the /user.json document (showing the new user was successfully created). 
 
-* System dependencies
+Please let me know your thoughts. I wasn't sure of the timeframe I had, so I can certainly work on this tomorrow afternoon as well if you'd like, I just wanted to be sure to get something to you by morning. 
 
-* Configuration
+Thanks,
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Joel
