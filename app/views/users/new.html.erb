@@ -5,6 +5,9 @@ function f(o){
 </script>
 
 <%= form_for User.new do |f| %>
+
+<%= render "shared/error_messages", :target => @user %>
+
 First name
   <%= f.text_field :first_name, :required => true %>
 <br/>
@@ -29,4 +32,9 @@ Social Security Number
 <br/>
 <br/>
 <%= f.submit "Register", class: 'btn btn-primary' %>
+<br/>
+<br/>
+<%= link_to 'See list of all users', users_path %>
+
+
 <% end %>

@@ -4,12 +4,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-<<<<<<< HEAD
 root 'users#new'
 resources :users, except: [:destroy]
-=======
-
->>>>>>> 8a6e06571682c06d71a7ffb2396e5a339627035f
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

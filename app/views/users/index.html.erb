@@ -5,10 +5,13 @@
       <td>First Name:<%= result.first_name %></td><br/>
       <td>Last Name:<%= result.last_name %></td><br/>
       <td>Email:<%= result.email %></td><br/>
+      <%= link_to 'Show this user only', user_path(result) %>
     </tr>
 
     <br/>
     <br/>
 
     <% end %>
+
+    <%= link_to 'Back to home', root_path %>
 
