@@ -19,9 +19,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    if params[:search]
-      @users = User.search(params[:search]).order("created_at DESC")
-    end
+#    if params[:search]
+#      @users = User.search(params[:search]).order("created_at DESC")
+#    end
   end
 
 
