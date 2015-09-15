@@ -88,9 +88,9 @@ Rails.application.configure do
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # config.assets.precompile += %w( search.js )
-=======
+
   # config.action_controller.asset_host = 'http://assets.example.com'
->>>>>>> 8a6e06571682c06d71a7ffb2396e5a339627035f
+
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -103,12 +103,12 @@ Rails.application.configure do
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
-<<<<<<< HEAD
+
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
 
-=======
->>>>>>> 8a6e06571682c06d71a7ffb2396e5a339627035f
+
+
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
