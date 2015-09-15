@@ -14,22 +14,12 @@ describe User do
 
 end
 
-
-RSpec.describe UsersController, :type => :controller do
-  render_views
-
-  let(:json) { JSON.parse(response.body) }
-end
-
-describe "GET /users.json" do
-  before do
-    get :index, format: :json
-  end
-
-  context 'all users' do
-    it 'returns the users' do
-      expect(json.collect{|l| l["first_name"]}).to include(@user1.first_name)
-    end
+describe UsersController, :type => :controller do
+  describe "GET index" do
+    it "returns a 200" do
+      get :index, format: :json
+      response.should be_successful
+    end   
   end
 end
 
